@@ -4,14 +4,14 @@ import java.math.BigDecimal;
 
 public class Vaccination {
 
-//    Original Data Points
+    //    Original Data Points
     String country;
     String continent;
     long peopleVaccinated;
     long partialVaccinated;
     long population;
 
-//    Generated Data points
+    //    Generated Data points
     BigDecimal fullyVaccinatedRatio;
     BigDecimal fullyVaccinatedPerK;
     BigDecimal partiallyVaccinatedPerK;
@@ -91,19 +91,17 @@ public class Vaccination {
     }
 
 
-
     @Override
     public String toString() {
-        return "Vaccination{" +
-                "country='" + country + '\'' +
-                ", continent='" + continent + '\'' +
-                ", peopleVaccinated=" + peopleVaccinated +
-                ", partialVaccinated=" + partialVaccinated +
-                ", population=" + population +
-                ", fullyVaccinatedRatio=" + fullyVaccinatedRatio +
-                ", fullyVaccinatedPerK=" + fullyVaccinatedPerK +
-                ", partiallyVaccinatedPerK=" + partiallyVaccinatedPerK +
-                ", disparity=" + disparity +
-                '}';
+        return
+                "\nCountry='" + country + '\'' +
+                        "\nContinent='" + continent + '\'' +
+                        "\nPeople Vaccinated=" + peopleVaccinated +
+                        "\nPartial Vaccinated=" + partialVaccinated +
+                        "\nPopulation=" + population +
+                        "\nFully Vaccinated Ratio=" + fullyVaccinatedRatio +
+                        "\nFully Vaccinated Per K=" + fullyVaccinatedPerK +
+                        "\nPartially Vaccinated Per K=" + partiallyVaccinatedPerK +
+                        "\nDisparity=" + disparity + "\n";
     }
 }
